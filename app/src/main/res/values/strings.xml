@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">PaadalAalayam</string>
+
+    <!--    Registration & Login UI values-->
+    <string name="email_address">Email Id <font color='#cc0029'>*</font></string>
+    <string name="registration">Sign Up</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="mobile_number">Mobile # <font color='#cc0029'>*</font></string>
+    <string name="full_name">Full Name <font color='#cc0029'>*</font></string>
+    <string name="password">Password <font color='#cc0029'>*</font></string>
+
+    <!--    Registration hardcoded values for future development-->
+    <string name="country">India</string>
+    <string name="state">Tamil Nadu</string>
+    <string name="city">Chennai</string>
+
+    <!--    Dashboard values-->
+    <string name="welcome_message">Hello </string>
+    <string name="splash_screen">Paadal \n Aalayam </string>
+</resources>

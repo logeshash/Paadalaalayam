@@ -1,21 +1,41 @@
 <resources>
     <string name="app_name">PaadalAalayam</string>
 
-    <!--    Registration & Login UI values-->
+    <!--Registration & Login UI values-->
     <string name="email_address">Email Id <font color='#cc0029'>*</font></string>
     <string name="registration">Sign Up</string>
     <string name="login">Login</string>
-    <string name="logout">Logout</string>
     <string name="mobile_number">Mobile # <font color='#cc0029'>*</font></string>
     <string name="full_name">Full Name <font color='#cc0029'>*</font></string>
     <string name="password">Password <font color='#cc0029'>*</font></string>
 
-    <!--    Registration hardcoded values for future development-->
+    <!--Registration hardcoded values for future development-->
     <string name="country">India</string>
     <string name="state">Tamil Nadu</string>
     <string name="city">Chennai</string>
 
-    <!--    Dashboard values-->
-    <string name="welcome_message">Hello </string>
+    <!--Dashboard values-->
+    <string name="dashboard_title">Hello!! </string>
     <string name="splash_screen">Paadal \n Aalayam </string>
+    <string name="add_movie">Add Movie </string>
+    <string name="add_lyrics">Add Lyrics </string>
+    <string name="view_lyrics">View Lyrics </string>
+    <string name="logout">Logout</string>
+
+    <!--OnBoarding Screens-->
+    <!--Titles-->
+    <string name="first_slide_title">Lorem Ipsum </string>
+    <string name="second_slide_title">Why do we use it</string>
+    <string name="third_slide_title">Sit Back and Enjoy </string>
+
+    <!--Description-->
+    <string name="first_slide_description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text </string>
+    <string name="second_slide_description">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </string>
+    <string name="third_slide_description">We will handle everything for you. As you have the app in your pocket then you don\'t have to worry about anything</string>
+
+    <!--Buttons-->
+    <string name="skip_btn">Skip</string>
+    <string name="next_btn">Next</string>
+    <string name="get_start">Get Started</string>
+
 </resources>

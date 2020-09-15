@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
             val inputCity = resources.getString(R.string.city)
 
 //            Check all input values are given
-            if(inputEmail.isNotEmpty() || inputPassword.isNotEmpty() || inputName.isNotEmpty() || inputPassword.isNotEmpty()) {
+            if(inputEmail.isNotEmpty() && inputPassword.isNotEmpty() && inputName.isNotEmpty() && inputPassword.isNotEmpty()) {
 
 //                Pass input values to create user function
                 createUser(inputEmail, inputPassword, inputName, inputMobile, inputCountry, inputState, inputCity)
@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "Enter all field values", Toast.LENGTH_LONG).show()
             }
         }
-//        clicking on login redirect to login page
+//        Clicking on login redirect to login page
         tvLogin.setOnClickListener{
             val intentLogin = Intent( this, LoginActivity::class.java)
             startActivity(intentLogin)
@@ -71,7 +71,7 @@ class MainActivity : AppCompatActivity() {
                     if(task.isSuccessful) {
 //                    If email and password is successful with firebase authentication add user details to user table on firebase realtime DB
                         val ref = FirebaseDatabase.getInstance().getReference("users")
-//                    set the firebase auth uid as userid into user table with other user details
+//                    Set the firebase auth uid as userid into user table with other user details
                         val userId = auth.uid
                         if (userId != null) {
                             val userDetails = UserDetails(userId, email, name, mobile, country, state, city)
@@ -92,10 +92,10 @@ class MainActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
 
-        val user = auth.currentUser;
+        val user = auth.currentUser
         if(user != null) {
-            var intent = Intent(this, DashboardActivity::class.java);
-            startActivity(intent);
+            val intentDashboard = Intent(this, DashboardActivity::class.java)
+            startActivity(intentDashboard)
         }
     }
 

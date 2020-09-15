@@ -5,6 +5,7 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.ValueEventListener
 
+/* Retrieve data from firebase */
 class ValueListenerAdapter(val handler: (DataSnapshot) -> Unit): ValueEventListener {
 
     private val TAG = "ValueListenerAdapter"

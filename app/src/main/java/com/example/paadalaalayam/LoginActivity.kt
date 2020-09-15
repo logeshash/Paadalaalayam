@@ -30,7 +30,7 @@ class LoginActivity : AppCompatActivity() {
             val inputEmail = editEmail.text?.trim().toString()
             val inputPassword = editPassword.text?.trim().toString()
 //            Check all input values are given
-            if(inputEmail.isNotEmpty() || inputPassword.isNotEmpty()) {
+            if(inputEmail.isNotEmpty() && inputPassword.isNotEmpty()) {
 //                Authenticate the email and password with firebase auth
                 signInUser(inputEmail, inputPassword)
             } else {
@@ -73,8 +73,8 @@ class LoginActivity : AppCompatActivity() {
 
         val user = auth.currentUser
         if(user != null) {
-            var intent = Intent(this, DashboardActivity::class.java);
-            startActivity(intent)
+            val intentDashboard = Intent(this, DashboardActivity::class.java)
+            startActivity(intentDashboard)
         }
     }
 }
